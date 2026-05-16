@@ -39,7 +39,7 @@ def init_db():
 init_db()
 
 
-def get_session():
+def get_session(): 
     """Dependency to get a database session"""
     with Session(engine) as session:
         yield session

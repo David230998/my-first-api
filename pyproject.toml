@@ -11,3 +11,8 @@ dependencies = [
     "streamlit>=1.57.0",
     "uvicorn>=0.46.0",
 ]
+
+[tool.pytest.ini_options]
+markers = [
+    "performance: marks tests as performance tests (deselect with '-m \"not performance\"')",
+]
